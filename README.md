@@ -12,11 +12,16 @@ A ideia do projeto é permitir a criação rápida de VMs a partir de um templat
 ## Estrutura do projeto
 
 ├── main.tf
+
 ├── vm.tf
+
 ├── variables.tf
+
 ├── output.tf
+
 ├── vms.auto.tfvars
-├── terraform.tfvars.example
+
+└── terraform.tfvars.example
 
 ### Descrição dos arquivos
 
