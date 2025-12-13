@@ -1,0 +1,10 @@
+pve_api_url      = "https://#your_url/api2/json"
+pve_token_id     = "#Token ID"
+pve_token_secret = "#Your Token Secret"
+
+vm_template = "#Your template number"
+
+ssh_pub_key = "#Your ssh key"
+
+#ssh_password =
+

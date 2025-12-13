@@ -7,9 +7,12 @@ crash.log
 # Terraform lock
 .terraform.lock.hcl
 
-# Variables
-*.tfvars
-*.tfvars.json
+# Ignore real tfvars
+terraform.tfvars
+terraform.tfvars.json
+
+#Ignore backups
+*.tfvars.backup
 
 # CLI config
 .terraformrc
