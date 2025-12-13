@@ -1,5 +1,7 @@
-Este é um projeto terraform para criação de VMs proxmox utilizando uma imagem cloud init, o provider utilizado é o bpg 0.89.0, a ideia é criar VMS rapidamente a partir de um template já criado e otimizar tempo!
+Este é um projeto Terraform para criação de máquinas virtuais no Proxmox VE utilizando imagem Cloud-Init.
+O provider utilizado é o bpg/proxmox (v0.89.0).
 
+A ideia do projeto é permitir a criação rápida de VMs a partir de um template já existente, facilitando a automação e otimizando tempo no provisionamento do ambiente.
 ## Requisitos
 
 - Terraform instalado
