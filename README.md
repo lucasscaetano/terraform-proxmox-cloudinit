@@ -23,6 +23,12 @@ A ideia do projeto é permitir a criação rápida de VMs a partir de um templat
 
 └── terraform.tfvars.example
 
+## O que este projeto faz
+- Cria múltiplas VMs no Proxmox a partir de um template
+- Aplica configuração de CPU, memória e disco
+- Injeta usuário e chave SSH via Cloud-Init
+- Provisiona VMs usando `for_each`
+
 ### Descrição dos arquivos
 
 - **main.tf**  
@@ -42,3 +48,18 @@ Configuração do provider Proxmox (bpg/proxmox) e definição dos requisitos do
 
 - **terraform.tfvars.example**  
   Exemplo de arquivo para variáveis sensíveis, alterar o nome para terraform.tfvars ou crie outro arquivo.
+
+ ## Fluxo de uso
+
+1. Criar `terraform.tfvars` a partir do exemplo
+2. Definir as VMs em `vms.auto.tfvars`
+3. Executar `terraform init`
+4. Conferir com `terraform plan`
+5. Aplicar com `terraform apply`
+
+## Remoção das VMs
+
+Para remover todas as VMs criadas por este projeto:
+
+```bash
+terraform destroy
