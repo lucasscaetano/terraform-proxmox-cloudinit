@@ -21,7 +21,7 @@ A ideia do projeto é permitir a criação rápida de VMs a partir de um templat
 
 ├── vms.auto.tfvars
 
-└── terraform.tfvars.example
+└── terraform.tfvars
 
 ## O que este projeto faz
 - Cria múltiplas VMs no Proxmox a partir de um template
