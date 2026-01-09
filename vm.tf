@@ -25,10 +25,10 @@ resource "proxmox_virtual_environment_vm" "vm" {
   }
 
   network_device {
-    model     = "virtio"
-    bridge    = "vmbr0"
+    model  = "virtio"
+    bridge = "vmbr0"
     #vlan_id   = var.vm_vlan
-    firewall  = true
+    firewall = true
   }
 
   initialization {
@@ -36,7 +36,7 @@ resource "proxmox_virtual_environment_vm" "vm" {
 
     user_account {
       keys     = [var.ssh_pub_key]
-      username = var.ssh_username
+      username = each.value.ssh_username
     }
 
     ip_config {

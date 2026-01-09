@@ -1,9 +1,10 @@
 variable "vms" {
   type = map(object({
-    name      = string
-    cores     = number
-    memory    = number
-    disk_size = number
+    name         = string
+    cores        = number
+    memory       = number
+    disk_size    = number
+    ssh_username = string
   }))
 }
 
@@ -38,8 +39,9 @@ variable "pve_token_id" {
 variable "pve_token_secret" {
   type = string
 }
-
+/*
 variable "ssh_username" {
   default = "lab"
 }
+*/
 
